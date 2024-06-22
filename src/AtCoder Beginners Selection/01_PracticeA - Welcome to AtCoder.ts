@@ -1,7 +1,7 @@
 import * as fs from "fs";
 
 // argsに入力データ全体が入る
-function Main(args: any) {
+function Main(args: any): void {
   // 1行目がinput[0], 2行目がinput[1], …に入る
   let input = args.split("\n");
   const tmp = input[1].split(" ");
