@@ -5,7 +5,7 @@ function Main(args: any): void {
   const numbers: number[] = args
     .split("\n")[1]
     .split(" ")
-    .map((num: string) => +num);
+    .map((num: string): number => +num);
   let i: number = 0;
   type conditionFunction = (i: number) => boolean;
   const condition: conditionFunction = (i: number): boolean => {
