@@ -4,7 +4,7 @@ import * as fs from "fs";
 function Main(args: any): void {
   const [N, ...dList]: string[] = args.split("\n");
   const SortedD: number[] = Array.from(
-    new Set(dList.map((number) => parseInt(number, 10)))
+    new Set(dList.map((number) => parseInt(number.trim(), 10)))
   );
   console.log(SortedD.length);
 }
