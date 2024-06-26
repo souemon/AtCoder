@@ -10,7 +10,7 @@ function Main(args: string): void {
     for (let b = N - a; b >= 0; b--) {
       if (10000 * a + 5000 * b + 1000 * (N - a - b) == Y) {
         console.log(`${a} ${b} ${N - a - b}`);
-        let result: boolean = true;
+        result = true;
         return;
       }
     }
