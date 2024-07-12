@@ -1,8 +1,8 @@
-import * as fs from "fs";
+import * as fs from 'fs';
 
 // argsに入力データ全体が入る
 function Main(args: string): void {
-  const inputData: number[] = args.split(" ").map(Number);
+  const inputData: number[] = args.split(' ').map(Number);
   const N: number = inputData[0];
   const Y: number = inputData[1];
   let result: boolean = false;
@@ -16,8 +16,8 @@ function Main(args: string): void {
     }
   }
   if (!result) {
-    console.log("-1 -1 -1");
+    console.log('-1 -1 -1');
   }
 }
 //*この行以降は編集しないでください（標準入出力から一度に読み込み、Mainを呼び出します）
-Main(fs.readFileSync(process.stdin.fd, "utf8"));
+Main(fs.readFileSync(process.stdin.fd, 'utf8'));
