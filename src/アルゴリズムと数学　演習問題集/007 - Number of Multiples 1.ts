@@ -5,10 +5,7 @@ function main(): void {
   const n: number = parseInt(input[0]);
   const x: number = parseInt(input[1]);
   const y: number = parseInt(input[2]);
-  if (x < 1) return;
-  if (y < x) return;
-  if (y < n) return;
-  if (n > 10 ** 6) return;
+  if (x < 1 || y < x || y > n || n > 10 ** 6) return;
 
   let count = 0;
   for (let i = 1; i <= n; i++) {
