@@ -1,9 +1,5 @@
 import * as fs from 'fs';
 
-const invalidSum = (sum: number): boolean => {
-  return sum > 1000;
-};
-
 // argsに入力データ全体が入る
 const Main = (args: any): void => {
   const input = args.trim().split('\n');
